@@ -7,8 +7,12 @@ public class GoldCustomer extends Customer {
 
 
     }
+
+
+
     public void print(){
-        System.out.println(name+"\t"+oneprice+"\t"+oneprice-(o));
+
+        System.out.println(name+"\t"+oneprice+"\t"+(oneprice-backMoney()));
     }
 
 }

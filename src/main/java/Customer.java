@@ -15,9 +15,12 @@ public class Customer {
 
 
     }
+    public  float backMoney(){
+        return (oneprice/1000*off*1000);
+    }
     public void print(){
-    float offMoney=(oneprice/1000*off*1000);
-        System.out.println(name+"\t"+oneprice+"\t"+(oneprice-offMoney));
+
+        System.out.println(name+"\t"+oneprice+"\t"+(oneprice-backMoney()));
     }
 
 
