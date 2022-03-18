@@ -20,7 +20,7 @@ public class Customer {
     }
     public void print(){
 
-        System.out.println(name+"\t"+oneprice+"\t"+(oneprice-backMoney()));
+        System.out.println(name+"\t"+oneprice+"\t"+(oneprice-backMoney())+"("+backMoney()+")");
     }
 
 
