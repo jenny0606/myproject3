@@ -1,33 +1,30 @@
+
 public class Student {
-
     String name;
-    int math;
     int english;
-    public  Student(String name){
-        this.name=name;
+    int math;
+    public Student(String name) { //Constructor
+        this.name = name;
     }
-    public  Student(String name,int english,int math){
-        //this.name=name;
+    public Student(String name, int english, int math) { //Constructor
         this(name);
-        this.english=english;
-        this.math=math;
+//        this.namex = name;
+        this.english = english;
+        this.math = math;
+    }
+    public Student() { //Default constructor
 
     }
-
-    public  Student(){
-        this("John Doe",-1,-1);
-
-
-    }
-    public  void print(){
-        int average=(english+math)/2;
-        System.out.print(name+'\t'+english+'\t'+math+"\t"+average);
-        if(average<60){
+    public void print() {
+        System.out.print(name + "\t" + english +
+                "\t" + math + "\t" + getAverage());
+        if (getAverage() < 60) {
             System.out.print("*");
-
         }
         System.out.println();
-
     }
 
+    public int getAverage() {
+        return (english+math)/2;
+    }
 }
